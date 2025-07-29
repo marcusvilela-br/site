@@ -5,22 +5,32 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background: #f5f5f5;
-    color: #333;
-}
-
-header {
-    background: rgb(1, 39, 1);
-    color: #fff;
-    padding: 1rem 0;
-    border-bottom: 4px solid #02700b;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f9f9f9;
+    color: #222;
+    line-height: 1.6;
 }
 
 .container {
     width: 90%;
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
+    padding: 2rem 0;
+}
+
+header {
+    background: white;
+    border-bottom: 2px solid #e0e0e0;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header h1 {
+    color: rgb(1, 39, 1);
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
 }
 
 nav ul {
@@ -30,87 +40,92 @@ nav ul {
 }
 
 nav a {
-    color: #fff;
+    color: rgb(1, 39, 1);
     text-decoration: none;
-    transition: background 0.3s, padding 0.3s;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
 nav a:hover {
-    background: rgb(1, 39, 1);
-    padding: 0.3rem 0.6rem;
-    border-radius: 6px;
-}
-
-main {
-    padding: 2rem 0;
+    color: #02700b;
 }
 
 section {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+}
+
+#sobre h2,
+#posts h2,
+#contato h2 {
+    color: rgb(1, 39, 1);
+    margin-bottom: 1rem;
 }
 
 .post {
     background: #fff;
-    padding: 1rem;
+    padding: 1.2rem;
     border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    margin-bottom: 1rem;
-    transition: transform 0.3s;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    margin-bottom: 1.5rem;
+    transition: transform 0.2s ease;
 }
 
 .post:hover {
-    transform: translateY(-5px);
+    transform: translateY(-3px);
 }
 
-.post a {
-    color: rgb(1, 39, 1);
+.post h3 {
+    margin-bottom: 0.5rem;
+    color: #111;
+}
+
+.post h6 {
+    color: #666;
+    font-size: 0.8rem;
+    margin-bottom: 0.8rem;
+}
+
+.botao-leia,
+.botao-postagens {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: rgb(1, 39, 1);
+    color: #fff;
+    border-radius: 6px;
     text-decoration: none;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
+}
+
+.botao-leia:hover,
+.botao-postagens:hover {
+    background: #02700b;
+}
+
+.contato-box {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.contato-box a {
+    text-decoration: none;
+    color: rgb(1, 39, 1);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contato-box a:hover {
+    color: #02700b;
 }
 
 footer {
-    background: rgb(1, 39, 1);
-    color: #fff;
+    background: white;
+    border-top: 2px solid #e0e0e0;
+    color: #777;
     text-align: center;
-    padding: 1rem 0;
-    margin-top: 2rem;
-}
-.contato-bar {
-    width: 100%;
-    background: #ffffff;
-    padding: 1rem;
-    border-radius: 0 0 20px 20px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-    align-items: center;
-}
-
-.contato-bar h2 {
-    margin: 0;
-}
-
-.contato-bar a {
-    color: black;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.contato-bar a:hover {
-    color: #2980b9;
-}
-.botao-postagens {
-    display: inline-block;
-    background: rgb(1, 39, 1);
-    color: #fff;
-    padding: 0.6rem 1rem;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background 0.3s;
-}
-
-.botao-postagens:hover {
-    background: #02700b;
+    padding: 1.5rem 0;
+    font-size: 0.9rem;
 }
