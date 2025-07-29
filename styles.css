@@ -100,3 +100,17 @@ footer {
 .contato-bar a:hover {
     color: #2980b9;
 }
+.botao-postagens {
+    display: inline-block;
+    background: rgb(1, 39, 1);
+    color: #fff;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.botao-postagens:hover {
+    background: #02700b;
+}
