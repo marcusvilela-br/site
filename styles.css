@@ -188,3 +188,9 @@ footer {
     color: #555;
 }
 
+.postagem-texto {
+    font-weight: 300;
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #333;
+}
